@@ -1,0 +1,10 @@
+^C:\USERS\KINGT\ONEDRIVE\DOCUMENTS\VULKAN\LIBRARIES FOR OPENGL\GLFW-3.3.8\CMAKEFILES\6E5D3A39386AD9E59FE67555E0C1DA69\GENERATE.STAMP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe "-SC:/Users/kingt/OneDrive/Documents/Vulkan/Libraries for opengl/glfw-3.3.8" "-BC:/Users/kingt/OneDrive/Documents/Vulkan/Libraries for opengl/glfw-3.3.8" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/kingt/OneDrive/Documents/Vulkan/Libraries for opengl/glfw-3.3.8/GLFW.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
