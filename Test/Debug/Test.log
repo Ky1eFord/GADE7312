@@ -1,0 +1,11 @@
+﻿  Test.cpp
+Test.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwWindowHint referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwDestroyWindow referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwMakeContextCurrent referenced in function _main
+Test.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function _main
+D:\OpenGL\Test\Debug\Test.exe : fatal error LNK1120: 9 unresolved externals
