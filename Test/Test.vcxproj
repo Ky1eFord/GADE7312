@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\glm-master\glm\Include;D:\Github\GADE7312\Library\Shaders;D:\Github\GADE7312\Library\stb-master\Inculde;D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -157,6 +157,9 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="Test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Dhillan\Pictures\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
