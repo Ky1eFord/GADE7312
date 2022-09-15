@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/kingt/OneDrive/Documents/Vulkan/Libraries for opengl/glfw-3.3.8/tests/CMakeLists.txt
+  msaa.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  msaa.vcxproj -> C:\Users\kingt\OneDrive\Documents\Vulkan\Libraries for opengl\glfw-3.3.8\tests\Release\msaa.exe
