@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\configuration;D:\Github\GADE7312\Library\Camera;D:\Github\GADE7312\Library\FileSystem;D:\Github\GADE7312\Library\glm-master\glm\Include;D:\Github\GADE7312\Library\Shaders;D:\Github\GADE7312\Library\stb-master\Inculde;D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\configuration;D:\Github\GADE7312\Library\Camera;D:\Github\GADE7312\Library\FileSystem;D:\Github\GADE7312\Library\glm-master;D:\Github\GADE7312\Library\Shaders;D:\Github\GADE7312\Library\stb-master\Inculde;D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
