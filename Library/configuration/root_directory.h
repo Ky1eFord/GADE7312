@@ -1,0 +1,1 @@
+const char * logl_root = "D:/Github/GADE7312/Library/configuration";

@@ -124,13 +124,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\glm-master\glm\Include;D:\Github\GADE7312\Library\Shaders;D:\Github\GADE7312\Library\stb-master\Inculde;D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Github\GADE7312\Library\configuration;D:\Github\GADE7312\Library\Camera;D:\Github\GADE7312\Library\FileSystem;D:\Github\GADE7312\Library\glm-master\glm\Include;D:\Github\GADE7312\Library\Shaders;D:\Github\GADE7312\Library\stb-master\Inculde;D:\Github\GADE7312\Library\glfw-3.3.8\include;D:\Github\GADE7312\Library\glew-2.1.0\include;D:\Github\GADE7312\Library\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Github\GADE7312\Library\glfw-3.3.8\src\Debug;D:\Github\GADE7312\Library\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Github\GADE7312\Library\configuration;D:\Github\GADE7312\Library\glfw-3.3.8\src\Debug;D:\Github\GADE7312\Library\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32sd.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -155,11 +156,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\LearnOpenGL-master\LearnOpenGL-master\src\stb_image.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="C:\Users\Dhillan\Pictures\container.jpg" />
+    <Image Include="C:\Users\Dhillan\Pictures\container.jpg">
+      <DeploymentContent>false</DeploymentContent>
+    </Image>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
