@@ -1,0 +1,86 @@
+﻿  Camera.cpp
+  chessBoard.cpp
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\chessBoard.cpp(70,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Main.cpp
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(105,28): warning C4018: '<': signed/unsigned mismatch
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(107,32): warning C4018: '<': signed/unsigned mismatch
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(175,40): warning C4018: '<': signed/unsigned mismatch
+  shader_m.cpp
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(139,29): error C2061: syntax error: identifier 'GLuint'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(54,33): error C2065: 'GL_VERTEX_SHADER': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(54,18): error C3861: 'glCreateShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(55,9): error C3861: 'glShaderSource': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(56,9): error C3861: 'glCompileShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(57,1): error C2660: 'Shader::checkCompileErrors': function does not take 2 arguments
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(139,10): message : see declaration of 'Shader::checkCompileErrors'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(59,35): error C2065: 'GL_FRAGMENT_SHADER': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(59,20): error C3861: 'glCreateShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(60,9): error C3861: 'glShaderSource': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(61,9): error C3861: 'glCompileShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(62,1): error C2660: 'Shader::checkCompileErrors': function does not take 2 arguments
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(139,10): message : see declaration of 'Shader::checkCompileErrors'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(64,14): error C3861: 'glCreateProgram': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(65,9): error C3861: 'glAttachShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(66,9): error C3861: 'glAttachShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(67,9): error C3861: 'glLinkProgram': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(68,1): error C2660: 'Shader::checkCompileErrors': function does not take 2 arguments
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(139,10): message : see declaration of 'Shader::checkCompileErrors'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(70,9): error C3861: 'glDeleteShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(71,9): error C3861: 'glDeleteShader': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(78,9): error C3861: 'glUseProgram': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(83,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(83,9): error C3861: 'glUniform1i': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(88,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(88,9): error C3861: 'glUniform1i': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(93,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(93,9): error C3861: 'glUniform1f': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(98,22): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(98,9): error C3861: 'glUniform2fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(102,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(102,9): error C3861: 'glUniform2f': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(107,22): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(107,9): error C3861: 'glUniform3fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(111,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(111,9): error C3861: 'glUniform3f': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(116,22): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(116,9): error C3861: 'glUniform4fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(120,21): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(120,9): error C3861: 'glUniform4f': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(125,28): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(125,71): error C2065: 'GL_FALSE': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(125,9): error C3861: 'glUniformMatrix2fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(130,28): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(130,71): error C2065: 'GL_FALSE': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(130,9): error C3861: 'glUniformMatrix3fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(135,28): error C3861: 'glGetUniformLocation': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(135,71): error C2065: 'GL_FALSE': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(135,9): error C3861: 'glUniformMatrix4fv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(141,9): error C2065: 'GLint': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(141,15): error C2146: syntax error: missing ';' before identifier 'success'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(141,15): error C2065: 'success': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(142,9): error C2065: 'GLchar': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(142,16): error C2146: syntax error: missing ';' before identifier 'infoLog'
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(142,16): error C2065: 'infoLog': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(143,13): error C2065: 'type': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(145,27): error C2065: 'shader': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(145,35): error C2065: 'GL_COMPILE_STATUS': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(145,55): error C2065: 'success': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(145,13): error C3861: 'glGetShaderiv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(146,18): error C2065: 'success': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(148,36): error C2065: 'shader': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(148,56): error C2065: 'infoLog': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(148,17): error C3861: 'glGetShaderInfoLog': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(149,77): error C2065: 'type': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(149,93): error C2065: 'infoLog': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(154,28): error C2065: 'shader': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(154,36): error C2065: 'GL_LINK_STATUS': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(154,53): error C2065: 'success': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(154,13): error C3861: 'glGetProgramiv': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(155,18): error C2065: 'success': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(157,37): error C2065: 'shader': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(157,57): error C2065: 'infoLog': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(157,17): error C3861: 'glGetProgramInfoLog': identifier not found
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(158,74): error C2065: 'type': undeclared identifier
+D:\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\shader_m.h(158,90): error C2065: 'infoLog': undeclared identifier
+  stb_image.cpp
+  Generating Code...
