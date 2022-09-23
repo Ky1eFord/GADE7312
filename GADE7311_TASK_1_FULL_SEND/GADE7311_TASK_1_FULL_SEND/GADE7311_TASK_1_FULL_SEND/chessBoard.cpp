@@ -131,6 +131,7 @@ void ChessBoard::create1() {
 
 
     int count = 9;
+    float ver = -0.1f;
     for (int i = 0; i < count; i++)
     {
         for (int j = 0; j < count; j++)
@@ -145,13 +146,13 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,               changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,              changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, ver,              changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,             changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,             changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,               changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,                changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,             changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord, ver,                changeTile, changeTile, changeTile,
 
                          
                            firstXcord, firstYcord, random,               changeTile, changeTile, changeTile,
@@ -163,34 +164,34 @@ void ChessBoard::create1() {
 
                           
                             firstXcord, secondYcord, random,              changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,               changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,                changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,                changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,ver,               changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord, ver,                changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord, ver,               changeTile, changeTile, changeTile,
                             firstXcord, firstYcord, random,               changeTile, changeTile, changeTile,
                             firstXcord, secondYcord, random,              changeTile, changeTile, changeTile,
 
                       
                             secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord,   ver,      changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,    ver,     changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,    ver,     changeTile, changeTile, changeTile,
                             secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
                             secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
 
                         
                              firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
                              secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, ver,     changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, ver,     changeTile, changeTile, changeTile,
+                             firstXcord, firstYcord,  ver,     changeTile, changeTile, changeTile,
                              firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
 
                              
                               firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
                               secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,      changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,      changeTile, changeTile, changeTile,
+                              firstXcord, firstYcord,  ver,      changeTile, changeTile, changeTile,
                               firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
 
 
@@ -213,52 +214,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                       
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                            
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                           
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
-
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
                     };
 
@@ -290,49 +286,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
-
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
                     };
 
@@ -354,51 +348,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                          
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                       
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                       
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                    
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                          
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
                     };
 
@@ -428,48 +418,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                     
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -491,13 +480,12 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,               changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,              changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,             changeTile, changeTile, changeTile,
-
-                           secondXcord, secondYcord, -0.1f,             changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,               changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,                changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,        
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
                            firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
                            secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
@@ -507,32 +495,32 @@ void ChessBoard::create1() {
                            firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
                             firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,             changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,              changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,              changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
                             firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
                             secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,            changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,             changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,             changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,            changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
                             secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,            changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
                              secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,            changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,            changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,             changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,            changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                              firstXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
                               secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,           changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,           changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,            changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,           changeTile, changeTile, changeTile
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -562,50 +550,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-     
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
-
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
                     };
 
@@ -626,48 +611,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -698,50 +682,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-   
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -762,50 +743,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -835,48 +813,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -898,48 +875,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -970,48 +946,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -1032,50 +1007,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                      
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                      
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -1106,49 +1078,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -1169,50 +1139,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                  
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -1243,50 +1210,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-           
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };
@@ -1308,51 +1272,47 @@ void ChessBoard::create1() {
                     GLfloat vertices[] =
                     {
 
-                           firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord,   ver,               changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord,  ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, ver,               changeTile, changeTile, changeTile,
+                          firstXcord, secondYcord,   ver,               changeTile, changeTile, changeTile,
+                          firstXcord, firstYcord,    ver,               changeTile, changeTile, changeTile,
 
-                           secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                          firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
+                           secondXcord, firstYcord, random,             changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           secondXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                           firstXcord, secondYcord, random,             changeTile, changeTile, changeTile,
+                           firstXcord, firstYcord, random,              changeTile, changeTile, changeTile,
 
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                           firstXcord, firstYcord, random,      changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord,    ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,     ver,            changeTile, changeTile, changeTile,
+                            firstXcord, firstYcord,  random,            changeTile, changeTile, changeTile,
+                            firstXcord, secondYcord, random,            changeTile, changeTile, changeTile,
 
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  ver,              changeTile, changeTile, changeTile,
+                            secondXcord, firstYcord,  random,           changeTile, changeTile, changeTile,
+                            secondXcord, secondYcord, random,           changeTile, changeTile, changeTile,
 
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, -0.1f,       changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            firstXcord, firstYcord, random,       changeTile, changeTile, changeTile,
-                            firstXcord, secondYcord, random,        changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord, random,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             secondXcord, firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord,    ver,           changeTile, changeTile, changeTile,
+                             firstXcord,  firstYcord, random,           changeTile, changeTile, changeTile,
 
-
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, -0.1f,      changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                            secondXcord, firstYcord, random,      changeTile, changeTile, changeTile,
-                            secondXcord, secondYcord, random,       changeTile, changeTile, changeTile,
-
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             secondXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, -0.1f,     changeTile, changeTile, changeTile,
-                             firstXcord, firstYcord, random,    changeTile, changeTile, changeTile,
-
-        
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, random,     changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              secondXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, -0.1f,      changeTile, changeTile, changeTile,
-                              firstXcord, firstYcord, random,     changeTile, changeTile, changeTile
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, random,          changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              secondXcord, firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, ver,             changeTile, changeTile, changeTile,
+                              firstXcord,  firstYcord, random,          changeTile, changeTile, changeTile
 
 
                     };            
@@ -1443,20 +1403,27 @@ void ChessBoard::Create2() {
     int eleven = 0;
     int twelf = 0;
 
+    float vertValone = -0.4f;
+    float vertValtwo = -0.45f;
+    float vertValthree = 0.5f;
+    float vertValfour = -0.05f;
+    float vertValfive = 0.55f;
+
     int vexCount = 4;
     for (int x = 0; x < vexCount; x++)
     {
         if (ten == 0)
         {
             GLfloat colourVertices[] =
-            {
-                -0.4f, 0.5f, -0.05f,   1.0f, 1.0f, 0.0f,
-                -0.45f, 0.55f, -0.05f,   1.0f, 1.0f, 0.0f,
-                -0.45f, -0.45f, -0.05f,  1.0f, 1.0f, 0.0f,
+            { 
+                 //x   //y   //z
+                vertValone, vertValthree, vertValfour,   1.0f, 1.0f, 0.0f,
+                vertValtwo, vertValfive, vertValfour,   1.0f, 1.0f, 0.0f,
+                vertValtwo, vertValtwo, vertValfour,  1.0f, 1.0f, 0.0f,
 
-                 -0.4f, -0.4f, -0.05f,   1.0f, 1.0f, 0.0f,
-                 -0.4f, 0.5f, -0.05f,    1.0f, 1.0f, 0.0f,
-                 -0.45f, -0.45f, -0.05f,   1.0f, 1.0f, 0.0f
+                 vertValone, vertValone, vertValfour,   1.0f, 1.0f, 0.0f,
+                 vertValone, vertValthree,vertValfour,    1.0f, 1.0f, 0.0f,
+                 vertValtwo, vertValtwo, vertValfour,   1.0f, 1.0f, 0.0f
             };
             glBindVertexArray(VAO[borderIndex]);
 
@@ -1474,13 +1441,13 @@ void ChessBoard::Create2() {
         {
             GLfloat colourVertices[] =
             {
-                -0.4f, 0.5f, -0.05f,   0.0f, 1.0f, 1.0f,
-                -0.45f, 0.55f, -0.05f,   0.0f, 1.0f, 1.0f,
-                 0.55f, 0.55f, -0.05f,  0.0f, 1.0f, 1.0f,
+                vertValone, vertValthree, vertValfour,   0.0f, 1.0f, 1.0f,
+               vertValtwo, vertValfive, vertValfour,   0.0f, 1.0f, 1.0f,
+                 vertValfive, vertValfive, vertValfour,  0.0f, 1.0f, 1.0f,
 
-                 0.5f, 0.5f, -0.05f,   0.0f, 1.0f, 1.0f,
-                 0.55f, 0.55f, -0.05f,    0.0f, 1.0f, 1.0f,
-                 -0.4f, 0.5f, -0.05f,   0.0f, 1.0f, 1.0f
+                 vertValthree, vertValthree, vertValfour,   0.0f, 1.0f, 1.0f,
+                 vertValfive, vertValfive, vertValfour,    0.0f, 1.0f, 1.0f,
+                vertValone, vertValthree, vertValfour,   0.0f, 1.0f, 1.0f
             };
             glBindVertexArray(VAO[borderIndex]);
 
@@ -1497,13 +1464,13 @@ void ChessBoard::Create2() {
         {
             GLfloat colourVertices[] =
             {
-                0.5f, 0.5f, -0.05f,   0.0f, 1.0f, 1.0f,
-                0.55f, 0.55f, -0.05f,   0.0f, 1.0f, 1.0f,
-                 0.55f, -0.45f, -0.05f,  0.0f, 1.0f, 1.0f,
+                vertValthree, vertValthree, vertValfour,   0.0f, 1.0f, 1.0f,
+                vertValfive, vertValfive, vertValfour,   0.0f, 1.0f, 1.0f,
+                 vertValfive, vertValtwo,vertValfour,  0.0f, 1.0f, 1.0f,
 
-                 0.5f, -0.45f, -0.05f,   0.0f, 1.0f, 1.0f,
-                 0.55f, -0.45f, -0.05f,    0.0f, 1.0f, 1.0f,
-                 0.5f, 0.5f, -0.05f,   0.0f, 1.0f, 1.0f
+                 vertValthree, vertValtwo,vertValfour,   0.0f, 1.0f, 1.0f,
+                 vertValfive, vertValtwo,vertValfour,    0.0f, 1.0f, 1.0f,
+                 vertValthree, vertValthree, vertValfour,   0.0f, 1.0f, 1.0f
             };
             glBindVertexArray(VAO[borderIndex]);
 
@@ -1520,13 +1487,13 @@ void ChessBoard::Create2() {
         {
             GLfloat colourVertices[] =
             {
-                0.5f, -0.4f, -0.05f,   0.0f, 1.0f, 1.0f,
-                0.55f, -0.45f, -0.05f,   0.0f, 1.0f, 1.0f,
-                -0.4f, -0.4f, -0.05f,  0.0f, 1.0f, 1.0f,
+                vertValthree, vertValone, vertValfour,   0.0f, 1.0f, 1.0f,
+                vertValfive, vertValtwo, vertValfour,   0.0f, 1.0f, 1.0f,
+                vertValone,vertValone, vertValfour,  0.0f, 1.0f, 1.0f,
 
-                 -0.45f, -0.45f, -0.05f,   0.0f, 1.0f, 1.0f,
-                 -0.4f, -0.4f, -0.05f,    0.0f, 1.0f, 1.0f,
-                 0.55f, -0.45f, -0.05f,   0.0f, 1.0f, 1.0f
+                 vertValtwo, vertValtwo, vertValfour,   0.0f, 1.0f, 1.0f,
+                 vertValone, vertValone, vertValfour,    0.0f, 1.0f, 1.0f,
+                 vertValfive, vertValtwo, vertValfour,   0.0f, 1.0f, 1.0f
             };
             glBindVertexArray(VAO[borderIndex]);
 
