@@ -1,0 +1,8 @@
+﻿  Main.cpp
+C:\Users\bless\Downloads\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(2269,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bless\Downloads\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(2271,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\bless\Downloads\GADE7311_TASK_1_FULL_SEND\GADE7311_TASK_1_FULL_SEND\Main.cpp(2338,40): warning C4018: '<': signed/unsigned mismatch
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\bless\Downloads\GADE7311_TASK_1_FULL_SEND\x64\Debug\vc120.pdb'; linking object as if no debug info
+  GADE7311_TASK_1_FULL_SEND.vcxproj -> C:\Users\bless\Downloads\GADE7311_TASK_1_FULL_SEND\x64\Debug\GADE7311_TASK_1_FULL_SEND.exe
