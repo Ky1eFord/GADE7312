@@ -1,0 +1,28 @@
+﻿  main.cpp
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1439,24): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1326,18): warning C4101: 'heightModel3': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1157,18): warning C4101: 'heightModel1': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1046,17): warning C4101: 'heightKing': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(736,19): warning C4101: 'heightKnight': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1243,18): warning C4101: 'heightModel2': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(842,19): warning C4101: 'heightBishop': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(517,6): warning C4101: 'widthPawn': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1046,6): warning C4101: 'widthKing': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(736,6): warning C4101: 'widthKnight': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(632,6): warning C4101: 'widthRook': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1326,5): warning C4101: 'widthModel3': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(517,17): warning C4101: 'heightPawn': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(632,17): warning C4101: 'heightRook': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1243,5): warning C4101: 'widthModel2': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(1157,5): warning C4101: 'widthModel1': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(944,6): warning C4101: 'widthQueen': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(944,18): warning C4101: 'heightQueen': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(842,6): warning C4101: 'widthBishop': unreferenced local variable
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2154,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2155,11): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2159,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2160,18): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2162,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2163,10): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\GADE7311_POE\main.cpp(2171,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  GADE7311_POE.vcxproj -> D:\Game Design Semester 1 FINAL YEAR\Game Design Semester 2\GADE\OpenGL\GADE7311_POE_FULLSEND\GADE7311_POE\Debug\GADE7311_POE.exe
