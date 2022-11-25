@@ -1,0 +1,95 @@
+#pragma region model 3
+
+Shader modelShaderOne3("chessBoardVert.vs", "chessBoardFrag.frag");
+
+// Vertex data for our pawn piece
+GLfloat modelVert3[10584];
+
+// Reads the vertex information from the text file 
+ifstream myFileModel3("model3.txt");
+
+i = 0;
+
+if (myFileModel3.is_open())
+{
+	string line;
+
+	while (!myFileModel3.eof())
+	{
+		getline(myFileModel3, line, ' ');
+		modelVert3[i] = stof(line);
+		i++;
+		getline(myFileModel3, line, ' ');
+		modelVert3[i] = stof(line);
+		i++;
+		getline(myFileModel3, line, '\n');
+		modelVert3[i] = stof(line);
+		i++;
+	}
+	myFileModel3.close();
+}
+else
+{
+	cout << "Can't open the file";
+}
+
+// Placing the pawns onto the chess board
+glm::vec3 modelPos3[] =
+{
+	glm::vec3(-3.0f, 0.5f, 3.0f),
+};
+
+// Generate the vertex arrays and vertex buffers and save them into variables
+GLuint VBA_Model3, VOA_Model3;
+glGenVertexArrays(1, &VOA_Model3);
+glGenBuffers(1, &VBA_Model3);
+
+// Bind the vertex array object
+glBindVertexArray(VOA_Model3);
+
+// Bind and set the vertex buffers
+glBindBuffer(GL_ARRAY_BUFFER, VBA_Model3);
+glBufferData(GL_ARRAY_BUFFER, sizeof(modelVert3), modelVert3, GL_STATIC_DRAW);
+
+// Create the vertex pointer and enable the vertex array
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (GLvoid*)0); //Position
+glEnableVertexAttribArray(0);
+
+// Texture coordinate attribute
+//glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)(2 * sizeof(GLfloat))); //Texture
+glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, 0); //Texture
+glEnableVertexAttribArray(2);
+
+// Unbind the vertex array to prevent strange bugs
+glBindVertexArray(0);
+
+// Chess Piece Pawn texture variables
+GLuint textureModel3;
+int widthModel3, heightModel3;
+
+#pragma region Model Texture
+// Create and load White texture
+glGenTextures(1, &textureModel3);
+glBindTexture(GL_TEXTURE_2D, textureModel3);
+
+// Set texture parameters
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+// Set texture filtering
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+// Actual texture loading code
+unsigned char* imageModel3 = SOIL_load_image("Textures/whiteMarble.png", &widthB, &heightB, 0, SOIL_LOAD_RGBA);
+
+// Specify 2D texture image
+glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthB, heightB, 0, GL_RGBA, GL_UNSIGNED_BYTE, imageModel3);
+
+// Generate mipmaps
+glGenerateMipmap(GL_TEXTURE_2D);
+SOIL_free_image_data(imageModel3);
+glBindTexture(GL_TEXTURE_2D, 0);
+#pragma endregion
+
+#pragma endregion

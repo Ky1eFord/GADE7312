@@ -1,0 +1,45 @@
+ourShaderBishop.Use();
+
+        glm::mat4 projection_Bishop(1.0f);
+
+        projection_Bishop = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.1f, 10000.0f);
+
+        glm::mat4 view_Bishop(1.0f);
+        view_Bishop = camera.GetViewMatrix();
+
+        GLint modelLoc_Bishop = glGetUniformLocation(ourShaderBishop.Program, "model");
+        GLint viewLoc_Bishop = glGetUniformLocation(ourShaderBishop.Program, "view");
+        GLint projLoc_Bishop = glGetUniformLocation(ourShaderBishop.Program, "projection");
+
+        glUniformMatrix4fv(viewLoc_Bishop, 1, GL_FALSE, glm::value_ptr(view_Bishop));
+        glUniformMatrix4fv(projLoc_Bishop, 1, GL_FALSE, glm::value_ptr(projection_Bishop));
+
+        glBindVertexArray(VOA_Bishop);
+
+        for (GLuint i = 0; i < 4; i++)
+        {
+            if (i <= 1)
+            {
+                // Activate White Texture
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, bishopTextureW);
+                glUniform1i(glGetUniformLocation(ourShaderBishop.Program, "ourTexture1"), 0);
+            }
+            else
+            {
+                // Activate Black Texture
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, bishopTextureB);
+                glUniform1i(glGetUniformLocation(ourShaderBishop.Program, "ourTexture1"), 0);
+            }
+
+
+
+            glm::mat4 model_Bishop(1.0f);
+            model_Bishop = glm::translate(model_Bishop, bishopPos[i]);
+            GLfloat angleBishop = 0.0f;
+            model_Bishop = glm::rotate(model_Bishop, angleBishop, glm::vec3(1.0f, 0.0f, 0.0f));
+            glUniformMatrix4fv(modelLoc_Bishop, 1, GL_FALSE, glm::value_ptr(model_Bishop));
+
+            glDrawArrays(GL_TRIANGLES, 0, 1260);
+        }

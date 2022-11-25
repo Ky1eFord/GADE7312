@@ -1,0 +1,43 @@
+ourShaderKnight.Use();
+
+        glm::mat4 projection_Knight(1.0f);
+
+        projection_Knight = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.1f, 10000.0f);
+
+        glm::mat4 view_Knight(1.0f);
+        view_Knight = camera.GetViewMatrix();
+
+        GLint modelLoc_Knight = glGetUniformLocation(ourShaderKnight.Program, "model");
+        GLint viewLoc_Knight = glGetUniformLocation(ourShaderKnight.Program, "view");
+        GLint projLoc_Knight = glGetUniformLocation(ourShaderKnight.Program, "projection");
+
+        glUniformMatrix4fv(viewLoc_Knight, 1, GL_FALSE, glm::value_ptr(view_Knight));
+        glUniformMatrix4fv(projLoc_Knight, 1, GL_FALSE, glm::value_ptr(projection_Knight));
+
+        glBindVertexArray(VOA_Knight);
+
+        for (GLuint i = 0; i < 4; i++)
+        {
+            if (i <= 1)
+            {
+                // Activate Black Texture
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, knightTextureB);
+                glUniform1i(glGetUniformLocation(ourShaderKnight.Program, "ourTexture1"), 0);
+            }
+            else
+            {
+                // Activate White Texture
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, knightTextureW);
+                glUniform1i(glGetUniformLocation(ourShaderKnight.Program, "ourTexture1"), 0);
+            }
+
+            glm::mat4 model_Knight(1.0f);
+            model_Knight = glm::translate(model_Knight, knightPos[i]);
+            GLfloat angleKnight = 0.0f;
+            model_Knight = glm::rotate(model_Knight, angleKnight, glm::vec3(1.0f, 0.0f, 0.0f));
+            glUniformMatrix4fv(modelLoc_Knight, 1, GL_FALSE, glm::value_ptr(model_Knight));
+
+            glDrawArrays(GL_TRIANGLES, 0, 1338);
+        }
