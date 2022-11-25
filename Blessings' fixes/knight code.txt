@@ -1,0 +1,98 @@
+
+Shader ourKnight("chessBoardVert.vs", "chessBoardFrag.frag");
+
+	GLfloat knightVerts[3780];
+
+	ifstream myFileKnight("Knight.txt");
+	i = 0;
+
+	if (myFileKnight.is_open())
+	{
+		string line;
+
+		while (!myFileKnight.eof())
+		{
+			getline(myFileKnight, line, ' ');
+			knightVerts[i] = stof(line);
+			i++;
+			getline(myFileKnight, line, ' ');
+			knightVerts[i] = stof(line);
+			i++;
+			getline(myFileKnight, line, '\n');
+			knightVerts[i] = stof(line);
+			i++;
+		}
+		myFileKnight.close();
+	}
+	else
+	{
+		cout << "Can't open the file";
+	}
+
+	glm::vec3 knightPos[] =
+	{
+		// White chess pieces
+		glm::vec3(-3.0f, 0.5f, 4.0f),
+		glm::vec3(4.0f, 0.5f, 4.0f),
+
+		// Black chess pieces
+		glm::vec3(-3.0f, 0.5f, -3.0f),
+		glm::vec3(4.0f, 0.5f, -3.0f),
+	};
+
+	GLuint VBA_Rook, VOA_Knight;
+	glGenVertexArrays(1, &VOA_Knight);
+	glGenBuffers(1, &VBA_Knight);
+
+	glBindVertexArray(VOA_Knight);
+
+	glBindBuffer(GL_ARRAY_BUFFER, VBA_Knight);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(knightVerts), knightVerts, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (GLvoid*)0);
+	glEnableVertexAttribArray(0);
+
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, 0);
+	glEnableVertexAttribArray(2);
+
+	glBindVertexArray(0);
+
+	GLuint rookTextureW,knightTextureB;
+	int widthKnight, heightKnight;
+
+#pragma region Knight Texture White
+	glGenTextures(1, &knightTextureW);
+	glBindTexture(GL_TEXTURE_2D, rookTextureW);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+	unsigned char* knightImageW = SOIL_load_image("Textures/whiteMarble.png", &widthB, &heightB, 0, SOIL_LOAD_RGBA);
+
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthB, heightB, 0, GL_RGBA, GL_UNSIGNED_BYTE, rookImageW);
+
+	glGenerateMipmap(GL_TEXTURE_2D);
+	SOIL_free_image_data(knightImageW);
+	glBindTexture(GL_TEXTURE_2D, 0);
+#pragma endregion
+
+#pragma region Knight Texture Black
+	glGenTextures(1, &knightTextureB);
+	glBindTexture(GL_TEXTURE_2D, knightTextureB);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+	unsigned char* knightImageB = SOIL_load_image("Textures/blackMarble.png", &widthB, &heightB, 0, SOIL_LOAD_RGBA);
+
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthB, heightB, 0, GL_RGBA, GL_UNSIGNED_BYTE, knightImageB);
+
+	glGenerateMipmap(GL_TEXTURE_2D);
+	SOIL_free_image_data(knightImageB);
+	glBindTexture(GL_TEXTURE_2D, 0);
