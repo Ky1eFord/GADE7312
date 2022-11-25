@@ -1,0 +1,76 @@
+lightingShader.Use( );
+        GLint lightPosLoc = glGetUniformLocation( lightingShader.Program, "light.position" );
+        GLint viewPosLoc = glGetUniformLocation( lightingShader.Program, "viewPos" );
+        glUniform3f( lightPosLoc, lightPos.x, lightPos.y, lightPos.z );
+        glUniform3f( viewPosLoc,  camera.GetPosition( ).x, camera.GetPosition( ).y, camera.GetPosition( ).z );
+        // Set lights properties
+        glUniform3f( glGetUniformLocation( lightingShader.Program, "light.ambient" ), 0.2f, 0.2f, 0.2f );
+        glUniform3f( glGetUniformLocation( lightingShader.Program, "light.diffuse" ), 0.5f, 0.5f, 0.5f );
+        glUniform3f( glGetUniformLocation( lightingShader.Program, "light.specular" ), 1.0f, 1.0f, 1.0f );
+        glUniform1f( glGetUniformLocation( lightingShader.Program, "light.constant" ), 1.0f );
+        glUniform1f( glGetUniformLocation( lightingShader.Program, "light.linear" ), 0.09 );
+        glUniform1f( glGetUniformLocation( lightingShader.Program, "light.quadratic" ), 0.032 );
+        // Set material properties
+        glUniform1f( glGetUniformLocation( lightingShader.Program, "material.shininess"), 32.0f );
+        
+        // Create camera transformations
+        glm::mat4 view;
+        view = camera.GetViewMatrix( );
+
+        // Get the uniform locations
+        GLint modelLoc = glGetUniformLocation( lightingShader.Program, "model" );
+        GLint viewLoc  = glGetUniformLocation( lightingShader.Program, "view" );
+        GLint projLoc  = glGetUniformLocation( lightingShader.Program, "projection" );
+        // Pass the matrices to the shader
+        glUniformMatrix4fv( viewLoc, 1, GL_FALSE, glm::value_ptr( view ) );
+        glUniformMatrix4fv( projLoc, 1, GL_FALSE, glm::value_ptr( projection ) );
+        
+        // Bind diffuse map
+        glActiveTexture( GL_TEXTURE0 );
+        glBindTexture( GL_TEXTURE_2D, diffuseMap );
+        // Bind specular map
+        glActiveTexture( GL_TEXTURE1 );
+        glBindTexture( GL_TEXTURE_2D, specularMap );
+        
+        // Draw 10 containers with the same VAO and VBO information; only their world space coordinates differ
+        glm::mat4 model;
+        glBindVertexArray( boxVAO );
+        for ( GLuint i = 0; i < 10; i++ )
+        {
+            model = glm::mat4( );
+            model = glm::translate( model, cubePositions[i] );
+            GLfloat angle = 20.0f * i;
+            model = glm::rotate( model, angle, glm::vec3( 1.0f, 0.3f, 0.5f ) );
+            glUniformMatrix4fv( modelLoc, 1, GL_FALSE, glm::value_ptr( model ) );
+            
+            glDrawArrays( GL_TRIANGLES, 0, 36 );
+        }
+        glBindVertexArray( 0 );
+        
+        
+        // Also draw the lamp object, again binding the appropriate shader
+        lampShader.Use( );
+        // Get location objects for the matrices on the lamp shader (these could be different on a different shader)
+        modelLoc = glGetUniformLocation( lampShader.Program, "model" );
+        viewLoc = glGetUniformLocation( lampShader.Program, "view" );
+        projLoc = glGetUniformLocation( lampShader.Program, "projection" );
+        // Set matrices
+        glUniformMatrix4fv( viewLoc, 1, GL_FALSE, glm::value_ptr( view ) );
+        glUniformMatrix4fv( projLoc, 1, GL_FALSE, glm::value_ptr( projection ) );
+        model = glm::mat4( );
+        model = glm::translate( model, lightPos );
+        model = glm::scale( model, glm::vec3( 0.2f ) ); // Make it a smaller cube
+        glUniformMatrix4fv( modelLoc, 1, GL_FALSE, glm::value_ptr( model ) );
+        // Draw the light object (using light's vertex attributes)
+        glBindVertexArray( lightVAO );
+        glDrawArrays( GL_TRIANGLES, 0, 36 );
+        glBindVertexArray( 0 );
+        
+        
+        // Swap the screen buffers
+        glfwSwapBuffers(window);
+    }
+    
+    glDeleteVertexArrays( 1, &boxVAO );
+    glDeleteVertexArrays( 1, &lightVAO );
+    glDeleteBuffers( 1, &VBO );
